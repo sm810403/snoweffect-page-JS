@@ -1,0 +1,16 @@
+body {
+    background-color: skyblue;
+}
+
+
+.fa-snowflake {
+    position: absolute;
+    top: -30px;
+    animation: falling 9s linear infinite;
+
+}
+@keyframes falling {
+    100% {
+        transform: translateY(100vh);
+    }
+}
