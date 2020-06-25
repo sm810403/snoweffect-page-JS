@@ -3,14 +3,24 @@ body {
     height: 100vh;
     background: url(../images/winter.jpg) center/cover no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "arial";
 }
 
 h1 {
     color: white;
     font-size: 56px;
+    text-shadow: 0 8px 10px lightpink;
 }
+.dates {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 5px 10px lightpink;
+}
+
 
 .fa-snowflake {
     position: absolute;
