@@ -39,6 +39,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
             let twoHours = '0'+ hours;
             hours = twoHours;
         }
+        
         //Get pm and am
         function getPM(){
             if (hours > 12) {
@@ -78,8 +79,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
         displayTime.textContent = setup;
         getPM();
     }, 1000);
-        
 
+    
 //activate more flakes
 snowMore();
 snowMore();
