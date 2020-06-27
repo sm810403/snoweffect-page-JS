@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
         //random distance, random speed, random opacity, random size:
         moreSnow.style.left = Math.random() * window.innerWidth +'px';
         moreSnow.style.opacity = Math.random();
-        moreSnow.style.fontSize = Math.random()* 14+10+'px';
+        moreSnow.style.fontSize = Math.random()* 10+10+'px';
         moreSnow.style.animationDuration = Math.random()* 6+3+'s';
         moreSnow.style.animationDelay = Math.random()*3+'s';
         
@@ -58,18 +58,12 @@ window.addEventListener('DOMContentLoaded', ()=>{
         //date
         let date = today.getDate();
         let day =today.getDay();
-        let days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
-        for (var i =0; i < days.length; i++) {
-            let dayName = days[i]
-            day = dayName;
-        }
+        let days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+        day = days[day];
         let year = today.getFullYear();
         let month = today.getMonth();
         let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        for (var j = 0; j <months.length; j++){
-            let monthName = months[j];
-            month = monthName;
-        }
+        month = months[month];
         //display date
         let dateSetup = `${month}/${date}/${day}/${year}`;
         displayDate.textContent = dateSetup;
@@ -80,7 +74,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
         getPM();
     }, 1000);
 
-    
+
 //activate more flakes
 snowMore();
 snowMore();
